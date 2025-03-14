@@ -1,0 +1,287 @@
+2025-03-14T16:11:48.3549173Z ##[debug]Starting: run-bot-and-c
+2025-03-14T16:11:48.3581627Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2025-03-14T16:11:48.3739797Z ##[debug]Starting: Set up job
+2025-03-14T16:11:48.3741591Z Current runner version: '2.322.0'
+2025-03-14T16:11:48.3787469Z ##[group]Operating System
+2025-03-14T16:11:48.3788621Z Ubuntu
+2025-03-14T16:11:48.3789341Z 24.04.2
+2025-03-14T16:11:48.3790063Z LTS
+2025-03-14T16:11:48.3790857Z ##[endgroup]
+2025-03-14T16:11:48.3791637Z ##[group]Runner Image
+2025-03-14T16:11:48.3792520Z Image: ubuntu-24.04
+2025-03-14T16:11:48.3793717Z Version: 20250309.1.0
+2025-03-14T16:11:48.3795436Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250309.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-03-14T16:11:48.3798120Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250309.1
+2025-03-14T16:11:48.3799803Z ##[endgroup]
+2025-03-14T16:11:48.3800631Z ##[group]Runner Image Provisioner
+2025-03-14T16:11:48.3801795Z 2.0.422.1
+2025-03-14T16:11:48.3802791Z ##[endgroup]
+2025-03-14T16:11:48.3805034Z ##[group]GITHUB_TOKEN Permissions
+2025-03-14T16:11:48.3807745Z Contents: read
+2025-03-14T16:11:48.3808743Z Metadata: read
+2025-03-14T16:11:48.3809601Z Packages: read
+2025-03-14T16:11:48.3810412Z ##[endgroup]
+2025-03-14T16:11:48.3814973Z Secret source: Actions
+2025-03-14T16:11:48.3816367Z ##[debug]Primary repository: VENOMVIP881/Uts
+2025-03-14T16:11:48.3817565Z Prepare workflow directory
+2025-03-14T16:11:48.3915210Z ##[debug]Creating pipeline directory: '/home/runner/work/Uts'
+2025-03-14T16:11:48.3920393Z ##[debug]Creating workspace directory: '/home/runner/work/Uts/Uts'
+2025-03-14T16:11:48.3922630Z ##[debug]Update context data
+2025-03-14T16:11:48.3928364Z ##[debug]Evaluating job-level environment variables
+2025-03-14T16:11:48.4268172Z ##[debug]Evaluating job container
+2025-03-14T16:11:48.4273138Z ##[debug]Evaluating job service containers
+2025-03-14T16:11:48.4277620Z ##[debug]Evaluating job defaults
+2025-03-14T16:11:48.4316601Z Prepare all required actions
+2025-03-14T16:11:48.4375440Z Getting action download info
+2025-03-14T16:11:48.6251975Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2025-03-14T16:11:48.6281437Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/f43a0e5ff2bd294095638e18286ca9a3d1956744.tar.gz' to '/home/runner/work/_actions/_temp_19eab0a3-fdd3-4cfc-b933-0e0184afd9d1/6d12d3dc-aab1-4bf3-aa4c-19800ade3bc6.tar.gz'
+2025-03-14T16:11:48.6993089Z ##[debug]Unwrap 'actions-checkout-f43a0e5' to '/home/runner/work/_actions/actions/checkout/v3'
+2025-03-14T16:11:48.7147299Z ##[debug]Archive '/home/runner/work/_actions/_temp_19eab0a3-fdd3-4cfc-b933-0e0184afd9d1/6d12d3dc-aab1-4bf3-aa4c-19800ade3bc6.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v3'.
+2025-03-14T16:11:48.7248849Z Download action repository 'actions/setup-python@v4' (SHA:65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236)
+2025-03-14T16:11:48.7285635Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_setup-python/65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236.tar.gz' to '/home/runner/work/_actions/_temp_c976daf4-e382-4c54-acc6-fd7afbe46bae/e7df6935-0bb8-4926-b9b0-6ec50a9bf481.tar.gz'
+2025-03-14T16:11:48.7696435Z ##[debug]Unwrap 'actions-setup-python-65d7f2d' to '/home/runner/work/_actions/actions/setup-python/v4'
+2025-03-14T16:11:48.7880472Z ##[debug]Archive '/home/runner/work/_actions/_temp_c976daf4-e382-4c54-acc6-fd7afbe46bae/e7df6935-0bb8-4926-b9b0-6ec50a9bf481.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/setup-python/v4'.
+2025-03-14T16:11:48.7937982Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v3/action.yml'.
+2025-03-14T16:11:48.8487738Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/setup-python/v4/action.yml'.
+2025-03-14T16:11:48.8631238Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout Repository'
+2025-03-14T16:11:48.8634889Z ##[debug]Set step '__actions_setup-python' display name to: 'Set up Python'
+2025-03-14T16:11:48.8637586Z ##[debug]Set step '__run' display name to: 'Install Dependencies'
+2025-03-14T16:11:48.8639770Z ##[debug]Set step '__run_2' display name to: 'Install GCC'
+2025-03-14T16:11:48.8716280Z ##[debug]Set step '__run_3' display name to: 'Compile C Program'
+2025-03-14T16:11:48.8718459Z ##[debug]Set step '__run_4' display name to: 'Run C Executable'
+2025-03-14T16:11:48.8720037Z ##[debug]Set step '__run_5' display name to: 'Give Execute Permission to BGMI'
+2025-03-14T16:11:48.8721520Z ##[debug]Set step '__run_6' display name to: 'Run BGMI Executable'
+2025-03-14T16:11:48.8722984Z ##[debug]Set step '__run_7' display name to: 'Run Telegram Bot'
+2025-03-14T16:11:48.8724167Z Complete job name: run-bot-and-c
+2025-03-14T16:11:48.8764413Z ##[debug]Collect running processes for tracking orphan processes.
+2025-03-14T16:11:48.8974213Z ##[debug]Finishing: Set up job
+2025-03-14T16:11:48.9088535Z ##[debug]Evaluating condition for step: 'Checkout Repository'
+2025-03-14T16:11:48.9126420Z ##[debug]Evaluating: success()
+2025-03-14T16:11:48.9131199Z ##[debug]Evaluating success:
+2025-03-14T16:11:48.9147339Z ##[debug]=> true
+2025-03-14T16:11:48.9154297Z ##[debug]Result: true
+2025-03-14T16:11:48.9176687Z ##[debug]Starting: Checkout Repository
+2025-03-14T16:11:48.9238886Z ##[debug]Register post job cleanup for action: actions/checkout@v3
+2025-03-14T16:11:48.9312475Z ##[debug]Loading inputs
+2025-03-14T16:11:48.9320737Z ##[debug]Evaluating: github.repository
+2025-03-14T16:11:48.9321851Z ##[debug]Evaluating Index:
+2025-03-14T16:11:48.9323942Z ##[debug]..Evaluating github:
+2025-03-14T16:11:48.9325124Z ##[debug]..=> Object
+2025-03-14T16:11:48.9330733Z ##[debug]..Evaluating String:
+2025-03-14T16:11:48.9331602Z ##[debug]..=> 'repository'
+2025-03-14T16:11:48.9335717Z ##[debug]=> 'VENOMVIP881/Uts'
+2025-03-14T16:11:48.9337184Z ##[debug]Result: 'VENOMVIP881/Uts'
+2025-03-14T16:11:48.9340134Z ##[debug]Evaluating: github.token
+2025-03-14T16:11:48.9340656Z ##[debug]Evaluating Index:
+2025-03-14T16:11:48.9341120Z ##[debug]..Evaluating github:
+2025-03-14T16:11:48.9341598Z ##[debug]..=> Object
+2025-03-14T16:11:48.9342017Z ##[debug]..Evaluating String:
+2025-03-14T16:11:48.9342469Z ##[debug]..=> 'token'
+2025-03-14T16:11:48.9343180Z ##[debug]=> '***'
+2025-03-14T16:11:48.9343880Z ##[debug]Result: '***'
+2025-03-14T16:11:48.9355321Z ##[debug]Loading env
+2025-03-14T16:11:48.9412659Z ##[group]Run actions/checkout@v3
+2025-03-14T16:11:48.9413341Z with:
+2025-03-14T16:11:48.9413887Z   repository: VENOMVIP881/Uts
+2025-03-14T16:11:48.9414501Z   token: ***
+2025-03-14T16:11:48.9414869Z   ssh-strict: true
+2025-03-14T16:11:48.9415271Z   persist-credentials: true
+2025-03-14T16:11:48.9415709Z   clean: true
+2025-03-14T16:11:48.9416106Z   sparse-checkout-cone-mode: true
+2025-03-14T16:11:48.9416572Z   fetch-depth: 1
+2025-03-14T16:11:48.9416944Z   fetch-tags: false
+2025-03-14T16:11:48.9417313Z   lfs: false
+2025-03-14T16:11:48.9417677Z   submodules: false
+2025-03-14T16:11:48.9418067Z   set-safe-directory: true
+2025-03-14T16:11:48.9418724Z ##[endgroup]
+2025-03-14T16:11:49.0863070Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/Uts/Uts'
+2025-03-14T16:11:49.0865108Z ##[debug]qualified repository = 'VENOMVIP881/Uts'
+2025-03-14T16:11:49.0866000Z ##[debug]ref = 'refs/heads/main'
+2025-03-14T16:11:49.0866870Z ##[debug]commit = '75e457c685c8274b2057b1fb02f390d1e19d5306'
+2025-03-14T16:11:49.0867747Z ##[debug]clean = true
+2025-03-14T16:11:49.0868541Z ##[debug]fetch depth = 1
+2025-03-14T16:11:49.0869815Z ##[debug]fetch tags = false
+2025-03-14T16:11:49.0871063Z ##[debug]lfs = false
+2025-03-14T16:11:49.0872200Z ##[debug]submodules = false
+2025-03-14T16:11:49.0873875Z ##[debug]recursive submodules = false
+2025-03-14T16:11:49.0875092Z ##[debug]GitHub Host URL = 
+2025-03-14T16:11:49.0876521Z ::add-matcher::/home/runner/work/_actions/actions/checkout/v3/dist/problem-matcher.json
+2025-03-14T16:11:49.0952656Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-03-14T16:11:49.0957613Z Syncing repository: VENOMVIP881/Uts
+2025-03-14T16:11:49.0959367Z ::group::Getting Git version info
+2025-03-14T16:11:49.0960838Z ##[group]Getting Git version info
+2025-03-14T16:11:49.0961527Z Working directory is '/home/runner/work/Uts/Uts'
+2025-03-14T16:11:49.0962550Z ##[debug]Getting git version
+2025-03-14T16:11:49.0963063Z [command]/usr/bin/git version
+2025-03-14T16:11:49.0998696Z git version 2.48.1
+2025-03-14T16:11:49.1024691Z ##[debug]0
+2025-03-14T16:11:49.1025901Z ##[debug]git version 2.48.1
+2025-03-14T16:11:49.1026662Z ##[debug]
+2025-03-14T16:11:49.1028015Z ##[debug]Set git useragent to: git/2.48.1 (github-actions-checkout)
+2025-03-14T16:11:49.1029653Z ::endgroup::
+2025-03-14T16:11:49.1030330Z ##[endgroup]
+2025-03-14T16:11:49.1037993Z ::add-mask::***
+2025-03-14T16:11:49.1047260Z Temporarily overriding HOME='/home/runner/work/_temp/88930792-32d4-42d7-83a3-508ac8de26fb' before making global git config changes
+2025-03-14T16:11:49.1049860Z Adding repository directory to the temporary git global config as a safe directory
+2025-03-14T16:11:49.1051186Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Uts/Uts
+2025-03-14T16:11:49.1077244Z ##[debug]0
+2025-03-14T16:11:49.1078265Z ##[debug]
+2025-03-14T16:11:49.1082723Z Deleting the contents of '/home/runner/work/Uts/Uts'
+2025-03-14T16:11:49.1086703Z ::group::Initializing the repository
+2025-03-14T16:11:49.1087341Z ##[group]Initializing the repository
+2025-03-14T16:11:49.1089313Z [command]/usr/bin/git init /home/runner/work/Uts/Uts
+2025-03-14T16:11:49.1159059Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-03-14T16:11:49.1160119Z hint: is subject to change. To configure the initial branch name to use in all
+2025-03-14T16:11:49.1161047Z hint: of your new repositories, which will suppress this warning, call:
+2025-03-14T16:11:49.1161734Z hint:
+2025-03-14T16:11:49.1162247Z hint: 	git config --global init.defaultBranch <name>
+2025-03-14T16:11:49.1162848Z hint:
+2025-03-14T16:11:49.1163753Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-03-14T16:11:49.1164730Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-03-14T16:11:49.1165456Z hint:
+2025-03-14T16:11:49.1165881Z hint: 	git branch -m <name>
+2025-03-14T16:11:49.1167091Z Initialized empty Git repository in /home/runner/work/Uts/Uts/.git/
+2025-03-14T16:11:49.1172685Z ##[debug]0
+2025-03-14T16:11:49.1173764Z ##[debug]Initialized empty Git repository in /home/runner/work/Uts/Uts/.git/
+2025-03-14T16:11:49.1174501Z ##[debug]
+2025-03-14T16:11:49.1176283Z [command]/usr/bin/git remote add origin https://github.com/VENOMVIP881/Uts
+2025-03-14T16:11:49.1206798Z ##[debug]0
+2025-03-14T16:11:49.1207558Z ##[debug]
+2025-03-14T16:11:49.1208307Z ::endgroup::
+2025-03-14T16:11:49.1208707Z ##[endgroup]
+2025-03-14T16:11:49.1209597Z ::group::Disabling automatic garbage collection
+2025-03-14T16:11:49.1210395Z ##[group]Disabling automatic garbage collection
+2025-03-14T16:11:49.1211075Z [command]/usr/bin/git config --local gc.auto 0
+2025-03-14T16:11:49.1236420Z ##[debug]0
+2025-03-14T16:11:49.1237178Z ##[debug]
+2025-03-14T16:11:49.1237815Z ::endgroup::
+2025-03-14T16:11:49.1238201Z ##[endgroup]
+2025-03-14T16:11:49.1238857Z ::group::Setting up auth
+2025-03-14T16:11:49.1239336Z ##[group]Setting up auth
+2025-03-14T16:11:49.1242160Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-03-14T16:11:49.1264468Z ##[debug]1
+2025-03-14T16:11:49.1265211Z ##[debug]
+2025-03-14T16:11:49.1268372Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-03-14T16:11:49.1553078Z ##[debug]0
+2025-03-14T16:11:49.1554085Z ##[debug]
+2025-03-14T16:11:49.1557353Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-03-14T16:11:49.1580482Z ##[debug]1
+2025-03-14T16:11:49.1581235Z ##[debug]
+2025-03-14T16:11:49.1584418Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-03-14T16:11:49.1809441Z ##[debug]0
+2025-03-14T16:11:49.1810376Z ##[debug]
+2025-03-14T16:11:49.1817104Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-03-14T16:11:49.1842182Z ##[debug]0
+2025-03-14T16:11:49.1843206Z ##[debug]
+2025-03-14T16:11:49.1850722Z ::endgroup::
+2025-03-14T16:11:49.1851253Z ##[endgroup]
+2025-03-14T16:11:49.1851946Z ::group::Fetching the repository
+2025-03-14T16:11:49.1852523Z ##[group]Fetching the repository
+2025-03-14T16:11:49.1859751Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +75e457c685c8274b2057b1fb02f390d1e19d5306:refs/remotes/origin/main
+2025-03-14T16:11:49.4296701Z remote: Enumerating objects: 6, done.        
+2025-03-14T16:11:49.4297950Z remote: Counting objects:  16% (1/6)        
+2025-03-14T16:11:49.4299124Z remote: Counting objects:  33% (2/6)        
+2025-03-14T16:11:49.4300662Z remote: Counting objects:  50% (3/6)        
+2025-03-14T16:11:49.4302068Z remote: Counting objects:  66% (4/6)        
+2025-03-14T16:11:49.4303865Z remote: Counting objects:  83% (5/6)        
+2025-03-14T16:11:49.4305531Z remote: Counting objects: 100% (6/6)        
+2025-03-14T16:11:49.4306816Z remote: Counting objects: 100% (6/6), done.        
+2025-03-14T16:11:49.4307951Z remote: Compressing objects:  25% (1/4)        
+2025-03-14T16:11:49.4309133Z remote: Compressing objects:  50% (2/4)        
+2025-03-14T16:11:49.4310296Z remote: Compressing objects:  75% (3/4)        
+2025-03-14T16:11:49.4312092Z remote: Compressing objects: 100% (4/4)        
+2025-03-14T16:11:49.4313368Z remote: Compressing objects: 100% (4/4), done.        
+2025-03-14T16:11:49.4316246Z remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)        
+2025-03-14T16:11:49.4376905Z From https://github.com/VENOMVIP881/Uts
+2025-03-14T16:11:49.4378645Z  * [new ref]         75e457c685c8274b2057b1fb02f390d1e19d5306 -> origin/main
+2025-03-14T16:11:49.4403904Z ##[debug]0
+2025-03-14T16:11:49.4405620Z ##[debug]
+2025-03-14T16:11:49.4407434Z ::endgroup::
+2025-03-14T16:11:49.4408372Z ##[endgroup]
+2025-03-14T16:11:49.4410380Z ::group::Determining the checkout info
+2025-03-14T16:11:49.4411781Z ##[group]Determining the checkout info
+2025-03-14T16:11:49.4413875Z ::endgroup::
+2025-03-14T16:11:49.4414812Z ##[endgroup]
+2025-03-14T16:11:49.4416559Z ::group::Checking out the ref
+2025-03-14T16:11:49.4417750Z ##[group]Checking out the ref
+2025-03-14T16:11:49.4419608Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-03-14T16:11:49.4453125Z Switched to a new branch 'main'
+2025-03-14T16:11:49.4456801Z branch 'main' set up to track 'origin/main'.
+2025-03-14T16:11:49.4463720Z ##[debug]0
+2025-03-14T16:11:49.4466732Z ##[debug]branch 'main' set up to track 'origin/main'.
+2025-03-14T16:11:49.4468948Z ##[debug]
+2025-03-14T16:11:49.4471675Z ::endgroup::
+2025-03-14T16:11:49.4473079Z ##[endgroup]
+2025-03-14T16:11:49.4500872Z ##[debug]0
+2025-03-14T16:11:49.4503965Z ##[debug]commit 75e457c685c8274b2057b1fb02f390d1e19d5306
+2025-03-14T16:11:49.4506534Z ##[debug]Author: VENOMVIP881 <sk472088chatha@gmail.com>
+2025-03-14T16:11:49.4508819Z ##[debug]Date:   Fri Mar 14 21:38:28 2025 +0530
+2025-03-14T16:11:49.4510424Z ##[debug]
+2025-03-14T16:11:49.4511347Z ##[debug]    Create main.yml
+2025-03-14T16:11:49.4512574Z ##[debug]
+2025-03-14T16:11:49.4513857Z [command]/usr/bin/git log -1 --format='%H'
+2025-03-14T16:11:49.4535315Z '75e457c685c8274b2057b1fb02f390d1e19d5306'
+2025-03-14T16:11:49.4541303Z ##[debug]0
+2025-03-14T16:11:49.4544761Z ##[debug]'75e457c685c8274b2057b1fb02f390d1e19d5306'
+2025-03-14T16:11:49.4546807Z ##[debug]
+2025-03-14T16:11:49.4549257Z ##[debug]Unsetting HOME override
+2025-03-14T16:11:49.4555084Z ::remove-matcher owner=checkout-git::
+2025-03-14T16:11:49.4570410Z ##[debug]Removed matchers: 'checkout-git'
+2025-03-14T16:11:49.4624465Z ##[debug]Node Action run completed with exit code 0
+2025-03-14T16:11:49.4659888Z ##[debug]Save intra-action state isPost = true
+2025-03-14T16:11:49.4661561Z ##[debug]Save intra-action state setSafeDirectory = true
+2025-03-14T16:11:49.4663691Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/Uts/Uts
+2025-03-14T16:11:49.4672885Z ##[debug]Finishing: Checkout Repository
+2025-03-14T16:11:49.4698535Z ##[debug]Evaluating condition for step: 'Set up Python'
+2025-03-14T16:11:49.4702022Z ##[debug]Evaluating: success()
+2025-03-14T16:11:49.4703723Z ##[debug]Evaluating success:
+2025-03-14T16:11:49.4705266Z ##[debug]=> true
+2025-03-14T16:11:49.4706638Z ##[debug]Result: true
+2025-03-14T16:11:49.4708397Z ##[debug]Starting: Set up Python
+2025-03-14T16:11:49.4761343Z ##[debug]Register post job cleanup for action: actions/setup-python@v4
+2025-03-14T16:11:49.4787294Z ##[debug]Loading inputs
+2025-03-14T16:11:49.4814591Z ##[debug]Evaluating: (((github.server_url == 'https://github.com') && github.token) || '')
+2025-03-14T16:11:49.4816585Z ##[debug]Evaluating Or:
+2025-03-14T16:11:49.4819253Z ##[debug]..Evaluating And:
+2025-03-14T16:11:49.4821885Z ##[debug]....Evaluating Equal:
+2025-03-14T16:11:49.4824136Z ##[debug]......Evaluating Index:
+2025-03-14T16:11:49.4825241Z ##[debug]........Evaluating github:
+2025-03-14T16:11:49.4826365Z ##[debug]........=> Object
+2025-03-14T16:11:49.4827407Z ##[debug]........Evaluating String:
+2025-03-14T16:11:49.4828484Z ##[debug]........=> 'server_url'
+2025-03-14T16:11:49.4829625Z ##[debug]......=> 'https://github.com'
+2025-03-14T16:11:49.4830789Z ##[debug]......Evaluating String:
+2025-03-14T16:11:49.4831874Z ##[debug]......=> 'https://github.com'
+2025-03-14T16:11:49.4836156Z ##[debug]....=> true
+2025-03-14T16:11:49.4837298Z ##[debug]....Evaluating Index:
+2025-03-14T16:11:49.4838341Z ##[debug]......Evaluating github:
+2025-03-14T16:11:49.4839384Z ##[debug]......=> Object
+2025-03-14T16:11:49.4840340Z ##[debug]......Evaluating String:
+2025-03-14T16:11:49.4841351Z ##[debug]......=> 'token'
+2025-03-14T16:11:49.4842750Z ##[debug]....=> '***'
+2025-03-14T16:11:49.4844126Z ##[debug]..=> '***'
+2025-03-14T16:11:49.4845519Z ##[debug]=> '***'
+2025-03-14T16:11:49.4851809Z ##[debug]Expanded: ((('https://github.com' == 'https://github.com') && '***') || '')
+2025-03-14T16:11:49.4853953Z ##[debug]Result: '***'
+2025-03-14T16:11:49.4861494Z ##[debug]Loading env
+2025-03-14T16:11:49.4875237Z ##[group]Run actions/setup-python@v4
+2025-03-14T16:11:49.4876284Z with:
+2025-03-14T16:11:49.4877019Z   python-version: 3.10
+2025-03-14T16:11:49.4877904Z   check-latest: false
+2025-03-14T16:11:49.4879003Z   token: ***
+2025-03-14T16:11:49.4879792Z   update-environment: true
+2025-03-14T16:11:49.4880737Z   allow-prereleases: false
+2025-03-14T16:11:49.4881646Z ##[endgroup]
+2025-03-14T16:11:49.6139165Z ##[debug]Python is expected to be installed into /opt/hostedtoolcache
+2025-03-14T16:11:49.6142742Z ::group::Installed versions
+2025-03-14T16:11:49.6144766Z ##[group]Installed versions
+2025-03-14T16:11:49.6147591Z ##[debug]Semantic version spec of 3.10 is 3.10
+2025-03-14T16:11:49.6150543Z ##[debug]isExplicit: 
+2025-03-14T16:11:49.6153074Z ##[debug]explicit? false
+2025-03-14T16:11:49.6155852Z ##[debug]isExplicit: 3.10.16
+2025-03-14T16:11:49.6158460Z ##[debug]explicit? true
+2025-03-14T16:11:49.6161042Z ##[debug]isExplicit: 3.11.11
+2025-03-14T16:11:49.6163870Z ##[debug]explicit? true
+2025-03-14T16:11:49.6166423Z ##[debug]isExplicit: 3.12.9
+2025-03-14T16:11:49.6168883Z ##[debug]explicit? true
+2025-03-14T16:11:49.61712
